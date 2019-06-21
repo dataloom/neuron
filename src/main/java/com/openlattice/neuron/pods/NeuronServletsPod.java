@@ -30,10 +30,10 @@ import com.kryptnostic.rhizome.configuration.servlets.DispatcherServletConfigura
 @Configuration
 public class NeuronServletsPod {
 
-    public static final String   NEURON_SERVLET_NAME     = "neuron";
-    public static final String[] NEURON_SERVLET_MAPPINGS = new String[] { "/neuron/*" };
+    private static final String   NEURON_SERVLET_NAME     = "neuron";
+    private static final String[] NEURON_SERVLET_MAPPINGS = new String[] { "/neuron/*" };
 
-    public static final Integer LOAD_ON_STARTUP = 1;
+    private static final Integer LOAD_ON_STARTUP = 1;
 
     @Bean
     public DispatcherServletConfiguration neuronServlet() {
